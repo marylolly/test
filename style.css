@@ -1,0 +1,83 @@
+html, body {
+  height: 100%;
+  overflow: hidden;
+  padding: 0;
+  margin: 0;
+  font-family: Arial;
+}
+
+#main-block {
+	display: flex;
+    width: 50%;
+    margin:auto;
+    min-height: 100vh;
+    align-items: center;
+}
+
+#main-block div {
+	text-align: center;
+	border: 2px solid black;
+	margin: 10px;
+	width: 20%;
+	padding: 10px;
+	height: max-content;
+}
+
+#main-block div:hover {
+	cursor: pointer;
+}
+
+.checked {
+	background: grey;
+	color: white;
+}
+
+.fon {
+	position: absolute;
+	height: 100vh;
+	width: 100%;
+	z-index: 998;
+	top: 0;
+	left: 0;
+	background: transparent;
+}
+
+.hidden {
+	display: none;
+}
+
+.popup {
+	position: absolute;
+	height: 0;
+	width: 0;
+	z-index: 0;
+	background: transparent;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	transition: all 0.5s ease-out;
+	font-size: 10px;
+	color: white;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.active {
+	height: 450px !important;
+	width: 700px !important;
+	z-index: 999 !important;
+	background: #282626f5 !important;
+	font-size: 200px !important;
+	border-radius: 30px;
+}
+
+.active span {
+	position: absolute;
+	right: 30px;
+	top: 20px;
+	font-size: 30px;
+	cursor: pointer;
+}
+
+
